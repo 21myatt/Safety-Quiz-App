@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+/* */
+:root {
+  font-size: 50%;
+}
+
+
+* {
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*  background-color: rgba(210, 218, 226,1)  */
+}
+
+/* Use for both play.html and game.html */
+.block {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* Use for both play.html and game.html */
+.block > * {
+  width: 100%;
+}
+
+/* Use for both play.html and game.html */
+.center  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+
+h1 {
+  font-size: 4.5rem;
+  color: #1e272e;
+  margin-bottom: 3rem;
+}
+
+.link {
+  font-size: 2rem;
+  padding: 1rem 0;
+  width: 20rem;
+  border-radius: 5rem;
+  background-color: white;
+  text-decoration: none;
+  border: 0.3rem solid #1e272e;
+  text-align: center;
+  color: #1e272e;
+  margin-bottom: 1rem;
+}
+
+.link:hover,.choice-container:hover {
+  /*background: rgba(210, 218, 226,0.3);*/
+  cursor: pointer;
+  transform: translateY(-0.2rem);
+  transition: transform 150ms;
+}
+
+.link[disabled]:hover {
+  cursor: not-allowed;
+  transform: none;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/* for game.html */
+
+h2 {
+  font-size: 3.2rem;
+  color: #1e272e;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.choice-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #1e272e;
+  background-color: white;
+  border-radius: 5rem;
+  width: 90%;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: rgba(30, 39, 46,1.0);
+  color: white;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+}
+
+/* color change for correct and incorrect */
+.correct {
+  background-color: #05c46b;
+  box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.75);
+  transform: translateY(-0.2rem);
+  transition: transform 50ms;
+}
+
+.incorrect {
+  background-color: #ff3f34;
+  box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.75);
+  transform: translateY(-0.2rem);
+  transition: transform 50ms;
+}
+
+/* Head Info Bar */
+#hud {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #1e272e;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #1e272e;
+  width: 0%;
+}
+
+/* end.html */
+#pass {
+  font-size: 2rem;
+  color: #1e272e;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.gohome {
+  font-size: 2rem;
+  padding: 1rem 0;
+  width: 20rem;
+  border-radius: 5rem;
+  background-color: white;
+  text-decoration: none;
+  border: 0.3rem solid #1e272e;
+  text-align: center;
+  color: #1e272e;
+  margin-bottom: 1rem;
+}
+
+.gohome:hover {
+  /*background: rgba(210, 218, 226,0.3);*/
+  cursor: pointer;
+  transform: translateY(0.5rem);
+  transition: transform 200ms;
+}
+
+.gohome[disabled]:hover {
+  cursor: not-allowed;
+  transform: none;
+}
