@@ -17,7 +17,7 @@ if (result >=50) {
 }
 else {
   congratulationText.innerText = `Try Next Time!!!`;
-  passText.innerText = `You are pretty good, Try next time dude`;
+  passText.innerText = `You are pretty good, Try again dude`;
   homeText.innerText = `Try Again`;
   finalScore.style.color = '#ff3f34';
 }
